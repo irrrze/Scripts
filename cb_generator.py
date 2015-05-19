@@ -151,7 +151,7 @@ def genfeed(name, info):
 		hit_cache = False
 		for oe in old_entries:
 			try:
-				if e.id == oe.id:
+				if e.link == oe.link:
 					e.description = oe.description
 					hit_cache = True
 					hit_count += 1;
